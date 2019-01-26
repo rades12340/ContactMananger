@@ -32,14 +32,14 @@ export class Provider extends Component {
         phone: "4444-45555"
       },
       {
-        id: 1,
+        id: 3,
         name: "Michael",
         email: "michael@gmail.com",
         phone: "222-2222"
       }
     ],
     dispatch: action => {
-      this.setState(state => reducer());
+      this.setState(state => reducer(state, action));
     }
   };
 
