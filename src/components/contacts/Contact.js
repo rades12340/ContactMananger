@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import PropTypes from "prop-types";
-import { Consumer } from "../context";
+import { Consumer } from "../../context";
 
 class Contact extends Component {
   state = {
@@ -23,6 +23,7 @@ class Contact extends Component {
             <div className="card card-body mb-3">
               <h4>
                 {name}
+
                 <i
                   onClick={() =>
                     this.setState({
