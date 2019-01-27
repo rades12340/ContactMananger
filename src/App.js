@@ -8,6 +8,7 @@ import Test from "./components/test/Test";
 import AddContact from "./components/contacts/AddContact";
 import { Provider } from "./context";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import EditContact from "./components/contacts/EditContact";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
                 <Route exact path="/contact/add" component={AddContact} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/test" component={Test} />
+                <Route exact path="/contact/edit/:id" component={EditContact} />
                 <Route component={NotFound} />
               </Switch>
             </div>
